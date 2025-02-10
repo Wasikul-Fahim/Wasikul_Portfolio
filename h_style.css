@@ -175,7 +175,6 @@ button {
 
 .theme-toggle {
     justify-content: end;
-    position: fixed;
     background: none;
     border: none;
     cursor: pointer;
