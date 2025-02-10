@@ -161,7 +161,6 @@ button {
 
 #porfolioIMG {
     padding: 20px;
-    
 }
 
 /* Navigation */
@@ -180,9 +179,9 @@ button {
 
 .universalBar{
     display: flex;
-    padding: 3% 8%;
+    padding: 2% 2%;
+    margin: 2%;
     justify-content: space-evenly;
-    margin-inline: 0%;
 }
 
 nav {
@@ -190,7 +189,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: var(--card-bg);
-    padding: 0.8rem 2rem;
+    padding: 1rem 1rem;
     border: solid;
     border-color: var(--text-color);
     border-radius: 50px;
@@ -201,7 +200,6 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-
     list-style: none;
     margin: 0%;
 }
