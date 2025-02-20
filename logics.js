@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded',
             alert('Thank you for your message!');
             e.target.reset();
         });
+
     }
 )
 
