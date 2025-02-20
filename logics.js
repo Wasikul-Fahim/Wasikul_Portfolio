@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded',
                 });
             });
         });
+
+        // Form Submission
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message!');
+            e.target.reset();
+        });
     }
 )
 

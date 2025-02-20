@@ -389,3 +389,17 @@ nav button:hover {
 .profile-card .social-links a:hover {
     color: var(--text-color);
 }
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+#contact {
+    display: flex;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+}
