@@ -42,6 +42,7 @@ body {
     line-height: 1.5;
     margin: 0;
     
+    
 }
 
 button {
@@ -56,6 +57,7 @@ button {
 
 a{
     text-decoration: none;
+    color: var(--text-color);
 }
 
 
@@ -116,7 +118,6 @@ a{
 #headHD {
     display: flex;
     justify-content: center;
-    color: var(--text-color);
     letter-spacing: 0;
     margin-top: 20px;
     margin-left: 25px;
@@ -274,7 +275,7 @@ a{
 
 .timeline-content h3 {
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .timeline-content p {
@@ -365,7 +366,7 @@ nav button:hover {
 
 .profile-card h3 {
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .profile-card p {
@@ -386,5 +387,5 @@ nav button:hover {
 }
 
 .profile-card .social-links a:hover {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
