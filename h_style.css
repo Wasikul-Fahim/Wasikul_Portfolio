@@ -27,10 +27,14 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     background-color: var(--bg-color);
     background: var(--bg-img);
     background-repeat: no-repeat;
-    color: #212529;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 2px;
@@ -50,6 +54,11 @@ button {
     font-size: 1rem;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 @media (max-width: 1080px) {
     .nav-links {
         display: none;
@@ -57,6 +66,7 @@ button {
     .universalBar{
         display: none;
     }
+    
     .profile-picture {
         width: 120px;
         height: 120px;
@@ -72,6 +82,7 @@ button {
     display: flex;
     justify-content: center;
 }
+
 
 #prifilePic{
     width: 150px;
@@ -89,7 +100,7 @@ button {
     letter-spacing: 2px;
 }
 
-.containerHeader {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +143,7 @@ button {
 }
 
 
-.portfolioSite {
+#portfolioSite {
     display: flex;
     gap: 10px;
     text-align: center;
@@ -184,6 +195,93 @@ button {
     justify-content: space-evenly;
 }
 
+#goalHeader{
+    text-align: center; 
+    margin-bottom: 3rem;
+}
+
+#goalHeader h2 {
+    color: var(--text-color);
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 5rem 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Vertical Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--text-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    clear: both;
+}
+
+/* Left-Sided Items */
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+/* Right-Sided Items */
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Circular Indicator */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--card-bg);
+    border: 4px solid var(--text-color);
+    border-radius: 50%;
+    top: 20px;
+    right: -10px;
+    z-index: 1;
+}
+
+.timeline-item.right::after {
+    left: -10px;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--text-color);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.timeline-content p {
+    color: var(--text-color);
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -224,4 +322,69 @@ nav button:hover {
     background: var(--secondary-color);
     border-radius: 10px;
     color: #000;
+}
+
+
+
+/* Profile Grid Section */
+.team {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.profile-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--text-color);
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--text-color);
+}
+
+.profile-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.profile-card p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.profile-card .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile-card .social-links a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.profile-card .social-links a:hover {
+    color: var(--primary-color);
 }
