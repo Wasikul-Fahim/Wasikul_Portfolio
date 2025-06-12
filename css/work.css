@@ -48,7 +48,7 @@ svg {
 
 /* Projects Section */
 svg {
-    width: 2rem;
+    width: 1.8rem;
 }
 .projects-grid {
     display: grid;
@@ -64,7 +64,6 @@ svg {
     backdrop-filter: blur(10px);
     box-shadow: #999;
     opacity: 1;
-    margin: 40px;
     transform: scale(1);
 }
 
@@ -138,7 +137,7 @@ svg {
 }
 
 .project-content {
-    padding: 5%;
+    padding: 20px;
     margin: 2%;
 }
 
