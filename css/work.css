@@ -62,7 +62,7 @@ svg {
     overflow: hidden;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    box-shadow: #999;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     opacity: 1;
     transform: scale(1);
 }
