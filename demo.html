@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Wasikul's Portfolio</title>
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f2f5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+   <header>
+            <nav>
+                <div class="logo">Wasikul</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myWork.html">My Work</a></li>
+                    <li><a href="aboutMe.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mySkills.html">My Skills</a></li>
+                    <li><a href="demo.html">DEMO</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+                    <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+                </div>
+            </nav>
+        </header>
+
+    <!-- Hero Section -->
+    <header class="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-100 to-purple-100 py-16 px-6 md:px-12 lg:px-24 rounded-xl shadow-lg mt-8 mx-auto max-w-7xl">
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                HELLO THERE, NICE TO MEET YOU, I AM
+                <span class="text-blue-600 block mt-2">Wasikul</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-6 max-w-md mx-auto md:mx-0">
+                A passionate and creative professional dedicated to crafting visually stunning and user-friendly digital experiences. From concept to creation, I deliver compelling solutions.
+            </p>
+            <div class="flex justify-center md:justify-start space-x-4">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+                <a href="https://github.com/google/generative-ai-docs" target="_blank" rel="noopener noreferrer" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Connect with Me
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center relative">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white ring-4 ring-blue-300">
+                <img src="image_a128ee.jpg" alt="Wasikul's Profile Picture" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-blue-500 opacity-10 rounded-full"></div>
+            </div>
+            <div class="absolute bottom-0 right-0 flex space-x-3 -mb-8 md:mb-0 md:-mr-12">
+                <a href="#" class="w-10 h-10 bg-white text-blue-600 flex items-center justify-center rounded-full shadow-md hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-white text-blue-600 flex items-center justify-center rounded-full shadow-md hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-white text-blue-600 flex items-center justify-center rounded-full shadow-md hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="container mx-auto px-6 md:px-12 lg:px-24 py-12">
+
+        <!-- About Me Section -->
+        <section id="about-me" class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Personal Information</h3>
+                    <p class="text-gray-600 mb-2"><strong class="font-medium">Name:</strong> Wasikul Islam</p>
+                    <p class="text-gray-600 mb-2"><strong class="font-medium">Date of Birth:</strong> January 1, 1995</p>
+                    <p class="text-gray-600 mb-2"><strong class="font-medium">Location:</strong> Dhaka, Bangladesh</p>
+                    <p class="text-gray-600 mb-2"><strong class="font-medium">Email:</strong> your.email@example.com</p>
+                    <p class="text-gray-600 mb-2"><strong class="font-medium">Phone:</strong> +880 123 456 7890</p>
+                    <p class="text-gray-600">
+                        <strong class="font-medium">Bio:</strong>
+                        I am a highly motivated and detail-oriented web developer with a passion for creating impactful and user-friendly digital solutions. With X years of experience in the field, I excel at turning complex ideas into elegant code and beautiful interfaces. My expertise lies in front-end development, responsive design, and collaborating with cross-functional teams to deliver high-quality projects. I am constantly learning and adapting to new technologies to stay at the forefront of the industry.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">My Philosophy</h3>
+                    <p class="text-gray-600 mb-4">
+                        I believe in the power of thoughtful design and clean code to solve real-world problems. My approach is centered on understanding user needs, crafting intuitive experiences, and building robust, scalable applications. I am committed to continuous improvement, both in my technical skills and in delivering value to my clients and colleagues.
+                    </p>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Interests & Hobbies</h3>
+                    <p class="text-gray-600">
+                        Beyond coding, I enjoy photography, hiking in nature, and exploring new culinary experiences. These activities help me stay creative, balanced, and bring fresh perspectives to my work.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Achievements Section -->
+        <section id="education" class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Educational Achievements</h2>
+            <div class="space-y-6">
+                <!-- Education Item 1 -->
+                <div class="border border-gray-200 rounded-lg p-4 flex items-start space-x-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-blue-600 text-3xl">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Bachelor of Science in Computer Science</h3>
+                        <p class="text-gray-700">University Name, City, Country</p>
+                        <p class="text-gray-500 text-sm">Graduated: May 2017</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2">
+                            <li>Relevant coursework: Data Structures, Algorithms, Web Development, Database Management.</li>
+                            <li>Achieved Dean's List for multiple semesters.</li>
+                            <li>Completed a capstone project on [Project Topic].</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Education Item 2 (Optional: Add more as needed) -->
+                <div class="border border-gray-200 rounded-lg p-4 flex items-start space-x-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-blue-600 text-3xl">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Advanced Web Development Certification</h3>
+                        <p class="text-gray-700">Online Platform/Institution, Year</p>
+                        <p class="text-gray-500 text-sm">Completed: October 2018</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2">
+                            <li>Focused on modern JavaScript frameworks (e.g., React, Vue).</li>
+                            <li>Built several full-stack applications as part of the curriculum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experiences Section -->
+        <section id="experience" class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Work Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="border border-gray-200 rounded-lg p-4 flex items-start space-x-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-purple-600 text-3xl">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Senior Web Developer</h3>
+                        <p class="text-gray-700">Company Name, City, Country</p>
+                        <p class="text-gray-500 text-sm">June 2020 – Present</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                            <li>Led the development of responsive web applications using React.js and Node.js, increasing user engagement by 20%.</li>
+                            <li>Collaborated with design and product teams to translate UI/UX wireframes into high-quality code.</li>
+                            <li>Optimized application performance, reducing load times by 15% through code refactoring and asset optimization.</li>
+                            <li>Mentored junior developers and conducted code reviews to ensure best practices.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="border border-gray-200 rounded-lg p-4 flex items-start space-x-4 hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-shrink-0 text-purple-600 text-3xl">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Front-End Developer</h3>
+                        <p class="text-gray-700">Previous Company, City, Country</p>
+                        <p class="text-gray-500 text-sm">July 2017 – May 2020</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                            <li>Developed and maintained user-facing features using HTML, CSS, and JavaScript.</li>
+                            <li>Implemented responsive designs to ensure cross-device compatibility.</li>
+                            <li>Worked closely with back-end developers to integrate APIs.</li>
+                            <li>Participated in daily stand-ups and agile sprint planning.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more experience items as needed -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p>&copy; 2024 Wasikul. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
