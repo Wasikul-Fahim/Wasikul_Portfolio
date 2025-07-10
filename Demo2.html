@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills Section</title>
+    <style>
+        /* General styling for the body to match your site's look */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5; /* A light background color like your site */
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        /* Skills Section Styling */
+        .skills-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .skills-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px; /* The space between cards */
+        }
+
+        /* Individual Skill Card Styling */
+        .skill-card {
+            display: flex;
+            background-color: #ffffff; /* Card background */
+            border-radius: 15px;
+            padding: 25px;
+            width: 100%;
+            max-width: 450px; /* Max width of a card */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Left part of the card (Icon and Title) */
+        .skill-card-left {
+            flex: 0 0 100px; /* Fixed width for the left part */
+            text-align: center;
+            margin-right: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #ddd; /* The square icon */
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .skill-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Right part of the card (Description) */
+        .skill-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: left;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">C</h3>
+                </div>
+                <p class="skill-description">Proficient in fundamental concepts and procedural programming using C, with experience in memory management and system-level development.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">C++</h3>
+                </div>
+                <p class="skill-description">Strong understanding of object-oriented programming (OOP), data structures, and algorithms to build efficient and scalable applications.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">Java</h3>
+                </div>
+                <p class="skill-description">Experienced in building robust, cross-platform applications using Java and its extensive library ecosystem.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">Python</h3>
+                </div>
+                <p class="skill-description">Skilled in Python for web development, scripting, and automation. Comfortable working with various libraries and frameworks.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">Django</h3>
+                </div>
+                <p class="skill-description">Capable of developing secure and maintainable web applications rapidly with the high-level Python web framework, Django.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">JavaScript</h3>
+                </div>
+                <p class="skill-description">Building interactive and dynamic user interfaces for the web, using modern JavaScript (ES6+) and DOM manipulation.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">HTML</h3>
+                </div>
+                <p class="skill-description">Writing clean, semantic, and accessible HTML5 markup to provide a solid structural foundation for websites.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">CSS</h3>
+                </div>
+                <p class="skill-description">Designing responsive and visually appealing layouts using modern CSS, including Flexbox and Grid, to ensure a great user experience.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">Docker</h3>
+                </div>
+                <p class="skill-description">Using Docker to containerize applications, ensuring consistent development and deployment environments across all platforms.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">Git</h3>
+                </div>
+                <p class="skill-description">Proficient with Git for version control, including branching, merging, and collaborating effectively with teams on codebases.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-left">
+                    <div class="skill-icon"></div>
+                    <h3 class="skill-title">CLI</h3>
+                </div>
+                <p class="skill-description">Comfortable and efficient working with the Command Line Interface (CLI) for development, server management, and automation tasks.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

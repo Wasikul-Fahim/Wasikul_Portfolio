@@ -19,7 +19,7 @@ body {
 
 /* Dark mode styles */
 :root {
-    --primary-color: #7294cb;
+    --primary-color: rgb(108, 145, 215);
     --secondary-color: #e6e6f4;
     --text-color: #414757;
     --bg-color: #25272c;
@@ -32,6 +32,7 @@ body {
 }
 
 .dark-mode {
+    --primary-color: rgb(138, 171, 232);
     --text-color: #cbccd2;
     --secondary-color: #0f1316;
     --bg-color: #22223B;
@@ -60,9 +61,10 @@ nav {
 
 /* Dark mode toggle */
 .theme-toggle {
-    background: transparent;
+    background: var(--primary-color);
     border: 1px solid #ccc;
     border-radius: 50%;
+    color: #fff;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -131,9 +133,6 @@ body.dark-mode .mobile-menu {
 
 .nav-links a:hover {
     color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 8px;
-    border-radius: 20px;
 }
 
 svg{
