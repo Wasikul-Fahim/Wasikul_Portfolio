@@ -19,7 +19,7 @@ body {
 
 /* Dark mode styles */
 :root {
-    --primary-color: rgb(108, 145, 215);
+    --primary-color: rgb(119, 160, 237);
     --secondary-color: #e6e6f4;
     --text-color: #414757;
     --bg-color: #25272c;
@@ -139,6 +139,7 @@ svg{
     margin: 5px;
     width: 40px;
     height: 40px;
+    align-self: center;
 }
 
 .cta-btn {

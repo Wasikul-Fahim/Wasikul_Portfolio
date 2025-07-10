@@ -35,7 +35,7 @@
 svg {
     fill: var(--primary-color);
     margin: 10px;
-    align-self: center;
+    width: 1.8rem;
 }
 
 
@@ -46,10 +46,6 @@ svg {
 }
 
 
-/* Projects Section */
-svg {
-    width: 1.8rem;
-}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
