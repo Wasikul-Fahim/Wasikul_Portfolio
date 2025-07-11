@@ -17,6 +17,7 @@ body {
     animation: ease-in;
 }
 
+
 /* Dark mode styles */
 :root {
     --primary-color: rgb(119, 160, 237);
@@ -142,6 +143,39 @@ svg{
     align-self: center;
 }
 
+/* Arrow button positioned in bottom left corner */
+.arrow-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  opacity: 1;
+  background: transparent;
+}
+
+.arrow-button:hover {
+  transform: translateY(-2px);
+}
+
+.arrow-button svg {
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  fill: var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+
+
 .cta-btn {
     background: var(--card-bg);
     color: var(--text-color);
@@ -262,6 +296,28 @@ footer {
         display: block;
     }
 
+
+    .arrow-button {
+        opacity: 0.7;
+        width: 40px;
+        height: 40px;
+        right: 12%;
+    }
+    
+    .arrow-button svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Optional: Make it more transparent when not being interacted with */
+    .arrow-button:not(:active) {
+        opacity: 0.5;
+    }
+    
+    /* Full opacity when touched/active */
+    .arrow-button:active {
+        opacity: 1;
+    }
 
     .footer-content {
         gap: 30px;
